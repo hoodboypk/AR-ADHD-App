@@ -656,11 +656,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4790f84ba0cc1d644938a9d0093c5c08, type: 3}
---- !u!1 &2494003701334824256 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7629504315674834949, guid: be758266d4112674e954601e6c4bb5bb, type: 3}
-  m_PrefabInstance: {fileID: 5439515914779880773}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3068925272945805575
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -872,22 +867,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pentagon
       objectReference: {fileID: 0}
-    - target: {fileID: 8171600137397010122, guid: be758266d4112674e954601e6c4bb5bb, type: 3}
-      propertyPath: m_UseGravity
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8171600137397010122, guid: be758266d4112674e954601e6c4bb5bb, type: 3}
-      propertyPath: m_Interpolate
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8171600137397010122, guid: be758266d4112674e954601e6c4bb5bb, type: 3}
-      propertyPath: m_IsKinematic
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8171600137397010122, guid: be758266d4112674e954601e6c4bb5bb, type: 3}
-      propertyPath: m_CollisionDetection
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be758266d4112674e954601e6c4bb5bb, type: 3}
 --- !u!1001 &6237285970106159659
@@ -1087,18 +1066,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4317107902231574923, guid: be758266d4112674e954601e6c4bb5bb, type: 3}
   m_PrefabInstance: {fileID: 5439515914779880773}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &8112240924865762511
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2494003701334824256}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f5c206ca2116544eafb2d8305a38ea2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &8334610328976489693 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1700444219678739038, guid: 3050768e06b26654290dcd59e938a4d0, type: 3}
