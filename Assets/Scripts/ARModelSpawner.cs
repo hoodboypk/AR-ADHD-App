@@ -1,38 +1,34 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ARModelSpawner : MonoBehaviour
 {
-    public GameObject[] arModels; // Array to hold all the AR models
-    public GameObject spawnButton; // Reference to the spawn button
+    public GameObject[] models; // Array of models to switch between
+    private int currentModelIndex = 0; // Index of the currently active model
 
-    private int currentIndex = 0; // Index of the currently enabled model
+    public Button switchButton; // Reference to the button that switches models
 
-    private void Start()
+    void Start()
     {
-        // Disable all AR models at the start
-        foreach (GameObject model in arModels)
+        // Hide all models except the first one
+        for (int i = 1; i < models.Length; i++)
         {
-            model.SetActive(false);
+            models[i].SetActive(false);
         }
 
-        // Disable the spawn button at the start
-        spawnButton.SetActive(false);
+        // Set up button click listener
+        switchButton.onClick.AddListener(SwitchModel);
     }
 
-    // Method to be called when the spawn button is clicked
-    public void SpawnModels()
+    void SwitchModel()
     {
-        if (currentIndex < arModels.Length)
-        {
-            arModels[currentIndex].SetActive(true); // Enable the current AR model
-            currentIndex++; // Move to the next model
+        // activate the current model
+        models[currentModelIndex].SetActive(true);
 
-            if (currentIndex >= arModels.Length)
-            {
-                spawnButton.SetActive(false); // Disable the spawn button when all models are spawned
-            }
-        }
+        // Increment index to switch to the next model
+        currentModelIndex = (currentModelIndex + 1) % models.Length;
+
+        // Activate the new model
+        models[currentModelIndex].SetActive(true);
     }
 }
