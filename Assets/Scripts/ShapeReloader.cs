@@ -7,6 +7,6 @@ public class ShapeReloader : MonoBehaviour
 {
     public void SceneReloader()
     {
-        SceneManager.LoadSceneAsync(0);
+        SceneManager.LoadSceneAsync(1);
     }
 }
