@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig>
   <Tracking>
+    <ImageTarget name="pin" size="6.000000 3.996923" />
     <ImageTarget name="marker" size="6.000000 9.481482" />
   </Tracking>
 </QCARConfig>
